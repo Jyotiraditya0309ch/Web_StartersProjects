@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<h1 id="myHeader">TO DO List</h1>
+<input type="button" id="addButton" onClick="addTask()" value="Add" />
+<input type="text" id="input" placeholder="Enter next task">
+<hr>
+<ul id="tasks">
+  <li>
+    <input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" />
+    <input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" />
+    make todo list
+  </li>
+</ul>
+<hr>
+
+<body>
+  <script src="./pix.js"></script>
+  <style>
+    ul {
+      padding-left: 0;
+    }
+
+    li {
+      list-style-type: none;
+      background-color: #eee;
+      border: 1px solid #c3c3c3;
+      padding: 10px 0px 10px 5px;
+      font-size: 20px;
+    }
+
+    .done {
+      background-color: green;
+    }
+
+    .remove {
+      background-color: red;
+    }
+
+    li.finished {
+      color: white;
+      background-color: gray;
+      text-decoration: line-through;
+    }
+
+    input[type="text"] {
+      font-size: 18px;
+      width: 94%;
+      padding: 10px;
+    }
+
+    input[type="button"] {
+      font-size: 1.2em;
+      margin: -6px 4px 0px 0px;
+    }
+
+    #addButton {
+      padding: 10px;
+    }
+
+    .yellowbackground {
+      background-color: yellow;
+    }
+  </style>
+</body>
